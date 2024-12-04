@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* Espacement égal entre les images */
+    padding-top: 20px; /* Rembourrage en haut du conteneur */
+    padding-bottom: 20px; /* Rembourrage en bas du conteneur */
+    margin-top: 20px; /* Espacement en haut du conteneur */
+    margin-bottom: 20px; /* Espacement en bas du conteneur */
+  }
+  
+  .image-container {
+    flex: 1; /* Chaque image-container occupe un tiers de l'espace */
+    text-align: center; /* Pour centrer le texte de la description */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Ombre orientée en bas à droite */
+    margin-right: 10px; /* Espacement entre les boîtes à droite */
+  }
+  
+  .image-container img {
+    width: 100%; /* Définit une largeur de 100% pour que toutes les images aient la même taille */
+    height: 200px; /* Définissez la hauteur fixe souhaitée pour les images */
+    object-fit: cover; /* Remplit la zone avec l'image en conservant ses proportions */
+    border-top-left-radius: 10px; /* Coin supérieur gauche */
+    border-top-right-radius: 10px; /* Coin supérieur droit */
+  }
+  
+  .image-container p {
+    margin-top: 10px; /* Espace entre l'image et la description */
+  }
+
+  .image-container:last-child {
+    margin-right: 0; /* Supprime la marge à droite de la dernière boîte */
+  }
+  
+  .image-link {
+    border-radius: 10px; /* Bords arrondis uniquement pour les boîtes avec des liens */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Ombre orientée en bas à droite */
+    overflow: hidden; /* Masque le débordement de l'image */
+  }
+  
+  .image-link a {
+    display: block; /* Fait du lien un bloc pour occuper toute la zone cliquable */
+    text-decoration: none; /* Supprime la décoration par défaut du lien */
+    color: inherit; /* Hérite la couleur du texte du parent */
+  }
+  
+  .image-link img {
+    width: 100%; /* Définit une largeur de 100% pour que toutes les images aient la même taille */
+    height: auto;
+    max-height: 200px; /* Définissez la hauteur maximale souhaitée */
+  }
+  
+  iframe {
+    width: 100%; /* La largeur de l'iframe prendra 100% de la largeur de l'écran */
+    height: 100vh; /* La hauteur de l'iframe prendra 100% de la hauteur de l'écran */
+    border: none; /* Pour supprimer les bordures de l'iframe */
+  }

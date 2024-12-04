@@ -1,35 +1,8 @@
-<!-- About -->
-{% if site.locale and site.locale != "" and site.locale != nil %}
-<section class="page-section" id="{{ site.data.sitetext[site.locale].about.section | default: "about" }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].about.title | default: "About Us" }}</h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].about.text | default: "" }}</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <div class="large text-muted">{{ site.data.sitetext[site.locale].about.body | markdownify }}</div>
-      </div>
-    </div>
-  </div>
-</section>
-{% else %}
-<section class="page-section" id="{{ site.data.sitetext.about.section | default: "about" }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.about.title | default: "About Us" }}</h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext.about.text | default: "" }}</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <div class="large text-muted">{{ site.data.sitetext.about.body | markdownify }}</div>
-      </div>
-    </div>
-  </div>
-</section>
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] | default:site.author %}
+
+{% if author.about %}
+  <aside class="about related mt4 mb4" role="complementary">
+    {% assign about_heading = site.data.strings.about | default:"About" %}
+    {% include author.html author=author heading=about_heading heading_tag='h2' %}
+  </aside>
 {% endif %}
-<!-- End About -->
