@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Mes projets
-slug: Mes projets
+title: Notre projets
+slug: Notre projets
 menu: true
 order: 2
 description: >
