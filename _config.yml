@@ -22,7 +22,7 @@ baseurl:               ''
 lang:                  fr
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Fache Quentin
+title:                 Water Things
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -31,10 +31,10 @@ title:                 Fache Quentin
 
 # A shorter description for the sidebar.
 tagline:               >
-  Ingénieur en reseaux informatiques et objets connectés 
+  Récupérateur d'eau connectés 
 
 # A list of keywords for your blog
-keywords:              [Unimakers Amiens, robotique, DIY, modelisme, Unilasalle Amiens, CDR, Coupe de france de robotique, Ingenieur]
+keywords:              [objet connecté, IoT, LoRa, Récupérateur d'eau, Unilasalle Amiens, Ingenieur, Réseau informatique et objet connecté]
 
 # Used by jekyll-seo-tag...
 logo:                  /assets/icons/icon.png
@@ -42,17 +42,17 @@ logo:                  /assets/icons/icon.png
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
-  name:                FACHE Quentin
-  email:               fachequentin@gmail.com
+  name:                Water Things
+  # email:               
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
-  linkedin:         https://www.linkedin.com/in/fache-quentin/
-  github:           https://github.com/N3O3000
-  website:          https://N3O3000.github.io
-  email:            mailto:fachequentin@gmail.com
+  # linkedin:         
+  # github:           
+  # website:          
+  # email:            
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © Fache Quentin 2024. All rights reserved.
+copyright:             © Water Things 2024. All rights reserved.
 
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
@@ -60,7 +60,7 @@ legal:
    - title:             Impress
      href:              /impress/
    - title:             Cookies Policy
-     href:              /N3O3000.github.io/cookies-policy.md
+     href:              /mvqrioc.github.io/cookies-policy.md
 
 # Format of the permalinks
 permalink:             pretty
