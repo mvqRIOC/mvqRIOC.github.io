@@ -23,13 +23,13 @@ layout: base
 ---
 
 {% assign strings = site.data.strings %}
-
+ 
 <article class="page" role="article">
   <header>
     <h1 class="page-title">{{ page.title | default:strings.home | default:"Home" }}</h1>
     {% include message.html text=page.description hide=page.hide_description %}
   </header>
-
+<!--
   {{ content }}
 
   <hr class="dingbat"/>
@@ -58,4 +58,5 @@ layout: base
       {% endfor %}
     </ul>
   {% endif %}
+   -->
 </article>
