@@ -22,7 +22,7 @@ baseurl:               ''
 lang:                  fr
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Water Things
+title:                 Ecodrop
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -42,7 +42,7 @@ logo:                  /assets/icons/icon.png
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
-  name:                Water Things
+  name:                Ecodrop
   # email:               
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
@@ -52,7 +52,7 @@ author:
   # email:            
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © Water Things 2024. All rights reserved.
+copyright:             © Ecodrop 2024. All rights reserved.
 
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
