@@ -3,7 +3,7 @@ layout: page
 title: Cahier des charges
 slug: Cahier des charges
 menu: true
-order: 1
+order: 2
 accent_color: '#457B9D'
 accent_image:       /assets/img/cdc.webp
 ---
