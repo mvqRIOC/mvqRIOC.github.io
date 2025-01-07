@@ -11,8 +11,6 @@ accent_image:       /assets/img/cdc.webp
 ### 1. Objectif du projet
 Concevoir un système de gestion automatisée de l'arrosage basé sur la mesure du niveau d'eau d'un réservoir, utilisant des technologies IoT et des protocoles de communication sécurisés et robustes.
 
----
-
 ### 2. Architecture générale
 Le système repose sur les composants suivants :
 
@@ -23,8 +21,6 @@ Le système repose sur les composants suivants :
 - **Capteur ultrason** : Pour la mesure du niveau d'eau dans le réservoir.  
 - **Contacteur** : Commande la mise en marche de la pompe selon des seuils définis.
 
----
-
 #### Infrastructure logicielle :
 - **VM Debian 1 : MongoDB**  
    - Base de données pour stocker l'historique des niveaux d'eau et les commandes de la pompe.  
@@ -34,15 +30,11 @@ Le système repose sur les composants suivants :
    - Assure la communication entre l'ESP32 et la base de données.  
    - Capacité : 2 vCPU, 2 Go RAM, 20 Go SSD.
 
----
-
 ### 3. Technologies et Protocoles :
 - **LoRa (Long Range)** : Communication longue distance entre les modules IoT.  
 - **MongoDB** : Base de données NoSQL pour le stockage des données.  
 - **MQTT (Mosquitto)** : Protocole de messagerie léger pour la communication entre l'ESP32 et la base de données.  
 - **ESP32** : Carte de développement IoT avec WiFi intégré et extension LoRa pour la gestion des capteurs et actionneurs.  
-
----
 
 ### 4. Fonctionnalités principales :
 - **Mesure du niveau d'eau :** Le capteur ultrason mesure le niveau d'eau et transmet la donnée à l'ESP32.  
@@ -53,8 +45,6 @@ Le système repose sur les composants suivants :
    - Le broker MQTT relaie l'information à la base de données MongoDB.  
 
 - **Interface utilisateur :** Visualisation des niveaux d'eau et commandes manuelles via une application web.  
-
----
 
 ### 5. Répartition des rôles :
 - **Valentin (Systèmes et Réseau)** :  
@@ -71,14 +61,10 @@ Le système repose sur les composants suivants :
    - Gestion des capteurs et actionneurs.  
    - Implémentation du protocole LoRa et MQTT sur l'ESP32.  
 
----
-
 ### 6. Sécurité :
 - Chiffrement des communications LoRa.  
 - Utilisation de TLS sur le broker MQTT.  
 - Contrôle des accès restreint sur la base MongoDB.  
-
----
 
 ### 7. Critères de réussite :
 - Mesure fiable du niveau d'eau.  
