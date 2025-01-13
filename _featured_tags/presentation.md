@@ -37,11 +37,111 @@ Le système repose sur les technologies suivantes :
 
 ### Équipe et Répartition des Rôles
 Le projet est mené par une équipe complémentaire :
-- **Valentin (Systèmes et Réseau)** : Mise en place et gestion des serveurs et de l'infrastructure réseau.
-- **Quentin (Développement Logiciel)** : Développement de l'interface web et gestion des bases de données.
-- **Mathieu (C et IoT)** : Développement de la logique embarquée sur l'ESP32 et gestion des capteurs.
+<!--ALL PROFILE-->
+<div class="container">
+  <!-- Profil: Mathieu -->
+  <div class="image-container">
+    <a href="javascript:void(0);" onclick="openModal('modal-mathieu')">
+      <img src="/assets/img/profil/mathieu_helwig.jpg" alt="Mathieux Helwig" class="profil-img">
+    </a>
+    <p>Mathieu Helwig</p>
+  </div>
+
+  <!-- Profil: Valentin -->
+  <div class="image-container">
+    <a href="javascript:void(0);" onclick="openModal('modal-valentin')">
+      <img src="/assets/img/profil/valentin_bruge.jpg" alt="Valentin Bruge" class="profil-img">
+    </a>
+    <p>Valentin Bruge</p>
+  </div>
+
+  <!-- Profil: Quentin -->
+  <div class="image-container">
+    <a href="javascript:void(0);" onclick="openModal('modal-quentin')">
+      <img src="/assets/img/profil/quentin_fache.jpg" alt="Quentin Fache" class="profil-img">
+    </a>
+    <p>Quentin Fache</p>
+  </div>
+
+<!-- ALL MODALS -->
+<!--Mathieu-->
+<div id="modal-mathieu" class="modal">
+  <div class="modal-content" style="background: #555555">
+    <span class="close" onclick="closeModal('modal-mathieu')">&times;</span>
+    <img src="/assets/img/profil/mathieu_helwig.jpg" alt="Mathieux Helwig" class="profil-img">
+    <h2>Mathieu Helwig 
+      <span class="techno">C/C++</span>
+      <span class="techno">IoT</span>
+    </h2>
+    <p style="font-size: 14px; text-align: justify;">
+      Adhezjnjbz zekjnbjhz  ekdjzkednjzc zed z ze dzjd chzc zczcnal j mc ka chajsc a ch kcja c ca kcal ca ck c,nez 
+    </p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/igus-france/" target="_blank">Rejoignez-le</a></p>
+    <hr style="border: 1px solid #555555; margin: 5px 0;">
+    <h2 style="margin-top: 3px;">Travail sur :</h2>
+    <ul>
+      <li style="font-size: 14px;">Développement de la logique embarquée sur l'ESP32 et gestion des capteurs.</li>
+    </ul>
+  </div>
+</div>
+
+<!--Valentin-->
+<div id="modal-valentin" class="modal">
+  <div class="modal-content" style="background: #555555">
+    <span class="close" onclick="closeModal('modal-valentin')">&times;</span>
+    <img src="/assets/img/profil/valentin_bruge.jpg" alt="Valentin Bruge" class="profil-img">
+    <h2>Valentin Bruge
+      <span class="techno">Systèmes</span>
+      <span class="techno">Réseau</span>
+    </h2>
+    <p style="font-size: 14px; text-align: justify;">
+      RAdhezjnjbz zekjnbjhz  ekdjzkednjzc zed z ze dzjd chzc zczcnal j mc ka chajsc a ch kcja c ca kcal ca ck c,nez
+    </p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/valentin-bruge-182650129/" target="_blank">Rejoignez-le</a></p>
+    <hr style="border: 1px solid #555555; margin: 5px 0;">
+    <h2 style="margin-top: 3px;">Travail sur :</h2>
+    <ul>
+      <li style="font-size: 14px;">Mise en place et gestion des serveurs et de l'infrastructure réseau.</li>
+    </ul>
+  </div>
+</div>
+
+<!--Quentin-->
+<div id="modal-quentin" class="modal">
+  <div class="modal-content" style="background: #555555">
+    <span class="close" onclick="closeModal('modal-quentin')">&times;</span>
+    <img src="/assets/img/profil/quentin_fache.jpg" alt="Quentin Fache" class="profil-img">
+    <h2>Quentin Fache
+      <span class="techno">Développement Logiciel</span>
+    </h2>
+    <p style="font-size: 14px; text-align: justify;">
+      RAdhezjnjbz zekjnbjhz  ekdjzkednjzc zed z ze dzjd chzc zczcnal j mc ka chajsc a ch kcja c ca kcal ca ck c,nez
+    </p>
+    <p><strong>Site web:</strong> <a href="https://https://n3o3000.github.io/" target="_blank">Visitez le site</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fache-quentin/" target="_blank">Rejoignez-le</a></p>
+    <hr style="border: 1px solid #555555; margin: 5px 0;">
+    <h2 style="margin-top: 3px;">Travail sur :</h2>
+    <ul>
+      <li style="font-size: 14px;">Développement de l'interface web et gestion des bases de données.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'flex';
+  document.body.classList.add('no-scroll');
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+  document.body.classList.remove('no-scroll');
+}
+</script>
+
 
 ### Conclusion
+
 Ce projet s'inscrit dans une démarche durable et technologique visant à promouvoir une gestion responsable des ressources en eau. Grâce à l'utilisation de technologies IoT avancées, il sera possible de monitorer et optimiser la gestion de l'eau, contribuant ainsi à la préservation des ressources naturelles tout en offrant une solution pratique pour les utilisateurs.
 
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1WwxH-btsl_lDIhhsQXZ52Vtq_VnEjBrY%26export%3Ddownload"></iframe>

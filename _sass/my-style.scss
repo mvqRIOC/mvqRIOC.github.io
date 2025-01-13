@@ -54,3 +54,112 @@
     height: 100vh; /* La hauteur de l'iframe prendra 100% de la hauteur de l'écran */
     border: none; /* Pour supprimer les bordures de l'iframe */
   }
+
+  .techno {
+    background-color: #457B9D; 
+    color: white;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 12px; 
+    font-weight: bold;
+    margin-left: 10px; 
+    vertical-align: middle;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+  }
+  
+  .techno:hover {
+    background-color: #457B9D;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; 
+  }
+  
+  .i-need-you {
+    object-fit: contain; 
+    max-width: 100%; 
+    max-height: 200px; 
+  }
+  
+  .image-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .profil-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: zoomIn 0.3s ease-in-out;
+  }
+  
+  .close {
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.7); }
+    to { transform: scale(1); }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+    height: 100%;
+  }

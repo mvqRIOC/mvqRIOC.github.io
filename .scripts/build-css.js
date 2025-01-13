@@ -78,3 +78,4 @@ async function getFiles(dir) {
     process.exit(1);
   }
 }());
+
