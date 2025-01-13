@@ -44,4 +44,4 @@ Le projet est mené par une équipe complémentaire :
 ### Conclusion
 Ce projet s'inscrit dans une démarche durable et technologique visant à promouvoir une gestion responsable des ressources en eau. Grâce à l'utilisation de technologies IoT avancées, il sera possible de monitorer et optimiser la gestion de l'eau, contribuant ainsi à la préservation des ressources naturelles tout en offrant une solution pratique pour les utilisateurs.
 
-<iframe frameborder="0" style="width:100%;height:102px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1WwxH-btsl_lDIhhsQXZ52Vtq_VnEjBrY%26export%3Ddownload"></iframe>
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1WwxH-btsl_lDIhhsQXZ52Vtq_VnEjBrY%26export%3Ddownload"></iframe>
