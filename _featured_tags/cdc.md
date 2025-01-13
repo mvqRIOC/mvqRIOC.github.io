@@ -14,6 +14,8 @@ Concevoir un système de gestion automatisée de l'arrosage basé sur la mesure 
 ### 2. Architecture générale
 Le système repose sur les composants suivants :
 
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1WwxH-btsl_lDIhhsQXZ52Vtq_VnEjBrY%26export%3Ddownload"></iframe>
+
 #### Équipements physiques :
 - **Réservoir d'eau de pluie** : Capacité à définir.  
 - **Pompe d'arrosage** : Commandée électroniquement pour l'irrigation automatique.  
