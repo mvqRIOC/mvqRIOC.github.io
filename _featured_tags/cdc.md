@@ -18,60 +18,63 @@ Le système repose sur les composants suivants :
 
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1WwxH-btsl_lDIhhsQXZ52Vtq_VnEjBrY%26export%3Ddownload"></iframe>
 
-#### Équipements physiques :
-- **Réservoir d'eau de pluie** : Capacité à définir.  
-- **Pompe d'arrosage** : Commandée électroniquement pour l'irrigation automatique.  
-- **ESP32 avec module WiFi + Extension LoRa** : Unité de contrôle principale.  
-- **Capteur ultrason** : Pour la mesure du niveau d'eau dans le réservoir.  
+### Équipements physiques
+- **Réservoir d’eau de pluie** : Capacité à définir.
+- **Pompe d’arrosage** : Commandée électroniquement pour l’irrigation automatique.
+- **ESP32 avec module WiFi + Extension LoRa** : Unité de contrôle principale.
+- **Capteur ultrason** : Pour la mesure du niveau d’eau dans le réservoir.
 - **Contacteur** : Commande la mise en marche de la pompe selon des seuils définis.
 
-#### Infrastructure logicielle :
-- **VM Debian 1 : MongoDB**  
-   - Base de données pour stocker l'historique des niveaux d'eau et les commandes de la pompe.  
-   - Capacité : 2 vCPU, 4 Go RAM, 20 Go SSD.  
+### Infrastructure logicielle
+- **VM MongoDB** :
+  - Base de données pour stocker l’historique des niveaux d’eau et les commandes de la pompe.
+  - Capacité : 2 vCPU, 4 Go RAM, 20 Go SSD.
+- **VM Node-RED** :
+  - Permet d’afficher les flux IoT pour les administrateurs et de superviser les échanges entre les différents composants.
+  - Capacité : 2 vCPU, 2 Go RAM, 20 Go SSD.
+- **VM Angular** :
+  - Héberge l’application web pour les utilisateurs afin de visualiser les niveaux d’eau et de gérer les actions IoT.
+  - Capacité : 2 vCPU, 4 Go RAM, 20 Go SSD.
 
-- **VM Debian 2 : MQTT Broker (Mosquitto)**  
-   - Assure la communication entre l'ESP32 et la base de données.  
-   - Capacité : 2 vCPU, 2 Go RAM, 20 Go SSD.
+### Technologies et Protocoles
+- **LoRa (Long Range)** : Communication longue distance entre les modules IoT.
+- **MongoDB** : Base de données NoSQL pour le stockage des données.
+- **ESP32** : Carte de développement IoT avec WiFi intégré et extension LoRa pour la gestion des capteurs et actionneurs.
+- **Node-RED** : Interface pour administrer et superviser les flux IoT.
+- **Angular** : Framework pour l’interface utilisateur.
 
-### Technologies et Protocoles :
-- **LoRa (Long Range)** : Communication longue distance entre les modules IoT.  
-- **MongoDB** : Base de données NoSQL pour le stockage des données.  
-- **MQTT (Mosquitto)** : Protocole de messagerie léger pour la communication entre l'ESP32 et la base de données.  
-- **ESP32** : Carte de développement IoT avec WiFi intégré et extension LoRa pour la gestion des capteurs et actionneurs.  
+### Fonctionnalités principales
+- **Mesure du niveau d’eau** : Le capteur ultrason mesure le niveau d’eau et transmet la donnée à l’ESP32.
+- **Gestion de l’arrosage** : Le contacteur active la pompe lorsque le niveau d’eau est suffisant.
+- **Transmission des données** :
+  - Le module LoRa envoie les données du capteur vers la passerelle LoRa.
+  - La passerelle transmet les données directement à la VM Node-RED.
+  - Node-RED relaie l’information à la base de données MongoDB.
+- **Interface utilisateur** :
+  - **Angular** : Permet aux utilisateurs de visualiser les niveaux d’eau et de gérer les actions sur l’objet IoT.
+  - **Node-RED** : Permet aux administrateurs de superviser les flux et les échanges.
 
-### Fonctionnalités principales :
-- **Mesure du niveau d'eau :** Le capteur ultrason mesure le niveau d'eau et transmet la donnée à l'ESP32.  
-- **Gestion de l'arrosage :** Le contacteur active la pompe lorsque le niveau d'eau est suffisant.  
-- **Transmission des données :**  
-   - Le module LoRa envoie les données du capteur vers la passerelle LoRa.  
-   - La passerelle transmet les données au broker MQTT sur la VM Debian.  
-   - Le broker MQTT relaie l'information à la base de données MongoDB.  
+### Répartition des rôles
+- **Valentin (Systèmes et Réseau)** :
+  - Mise en place et sécurisation des trois VMs (MongoDB, Node-RED et Angular).
+  - Configuration de la base MongoDB.
+  - Supervision de la connectivité LoRa et de l’intégration réseau.
+- **Quentin (Développement Logiciel)** :
+  - Développement de l’application Web Angular et intégration des bases de données.
+  - Implémentation des API pour la gestion des requêtes de l’ESP32 vers la base de données.
+- **Mathieu (C et IoT)** :
+  - Programmation de l’ESP32 en C.
+  - Gestion des capteurs et actionneurs.
+  - Implémentation du protocole LoRa sur l’ESP32.
 
-- **Interface utilisateur :** Visualisation des niveaux d'eau et commandes manuelles via une application web.  
+### Sécurité
+- Chiffrement des communications LoRa.
+- Contrôle des accès restreint sur la base MongoDB.
+- Fermeture des ports non nécessaires sur chaque VM pour limiter les risques.
 
-### Répartition des rôles :
-- **Valentin (Systèmes et Réseau)** :  
-   - Mise en place et sécurisation des VMs Debian.  
-   - Configuration du broker MQTT et de la base MongoDB.  
-   - Supervision de la connectivité LoRa et de l'intégration réseau.  
-
-- **Quentin (Développement Logiciel)** :  
-   - Développement de l'application Web et intégration des bases de données.  
-   - Implémentation des API pour la gestion des requêtes de l'ESP32 vers la BDD.  
-
-- **Mathieu (C et IoT)** :  
-   - Programmation de l'ESP32 en C.  
-   - Gestion des capteurs et actionneurs.  
-   - Implémentation du protocole LoRa et MQTT sur l'ESP32.  
-
-### Sécurité :
-- Chiffrement des communications LoRa.  
-- Utilisation de TLS sur le broker MQTT.  
-- Contrôle des accès restreint sur la base MongoDB.  
-
-### Critères de réussite :
-- Mesure fiable du niveau d'eau.  
-- Commande automatique de la pompe.  
-- Transmission LoRa stable sur la distance prévue.  
-- Accès web fonctionnel et sécurisé.
+### Critères de réussite
+- Mesure fiable du niveau d’eau.
+- Commande automatique de la pompe.
+- Transmission LoRa stable sur la distance prévue.
+- Interface utilisateur fonctionnelle et intuitive.
+- Supervision efficace via Node-RED.
