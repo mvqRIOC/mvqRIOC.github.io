@@ -95,7 +95,7 @@ Le projet est mené par une équipe complémentaire :
       <span class="techno">Réseau</span>
     </h2>
     <p style="font-size: 14px; text-align: justify;">
-      RAdhezjnjbz zekjnbjhz  ekdjzkednjzc zed z ze dzjd chzc zczcnal j mc ka chajsc a ch kcja c ca kcal ca ck c,nez
+      Étudiant en informatique spécialisé en systèmes et réseaux, je suis passionné par l'innovation technologique et prêt à mettre à profit mes compétences en supervision, sécurité et infrastructures réseau pour contribuer efficacement au sein d'une entreprise dynamique.
     </p>
     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/valentin-bruge-182650129/" target="_blank">Rejoignez-le</a></p>
     <hr style="border: 1px solid #555555; margin: 5px 0;">
