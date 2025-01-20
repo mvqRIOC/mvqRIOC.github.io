@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Présentation
-slug: Présentation
+title: Presentation
+slug: Presentation
 menu: true
 order: 1
 accent_color: '#457B9D'
