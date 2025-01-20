@@ -7,6 +7,7 @@ order: 1
 accent_color: '#457B9D'
 accent_image:       /assets/icons/image.png
 ---
+### Presentation
 
 ### Contexte et Enjeux
 L'accès à l'eau est une ressource précieuse de plus en plus menacée par les changements climatiques et l'augmentation de la consommation. Notre projet vise à développer une solution technologique innovante permettant la gestion automatisée de l'eau de pluie dans un objectif de réduction de la consommation d'eau potable.
