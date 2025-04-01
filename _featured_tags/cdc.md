@@ -29,9 +29,6 @@ Le système repose sur les composants suivants :
 - **VM MongoDB** :
   - Base de données pour stocker l’historique des niveaux d’eau et les commandes de la pompe.
   - Capacité : 2 vCPU, 4 Go RAM, 20 Go SSD.
-- **VM Node-RED** :
-  - Permet d’afficher les flux IoT pour les administrateurs et de superviser les échanges entre les différents composants.
-  - Capacité : 2 vCPU, 2 Go RAM, 20 Go SSD.
 - **VM Angular** :
   - Héberge l’application web pour les utilisateurs afin de visualiser les niveaux d’eau et de gérer les actions IoT.
   - Capacité : 2 vCPU, 4 Go RAM, 20 Go SSD.
@@ -40,7 +37,6 @@ Le système repose sur les composants suivants :
 - **LoRa (Long Range)** : Communication longue distance entre les modules IoT.
 - **MongoDB** : Base de données NoSQL pour le stockage des données.
 - **ESP32** : Carte de développement IoT avec WiFi intégré et extension LoRa pour la gestion des capteurs et actionneurs.
-- **Node-RED** : Interface pour administrer et superviser les flux IoT.
 - **Angular** : Framework pour l’interface utilisateur.
 
 ### Fonctionnalités principales
@@ -48,15 +44,15 @@ Le système repose sur les composants suivants :
 - **Gestion de l’arrosage** : Le contacteur active la pompe lorsque le niveau d’eau est suffisant.
 - **Transmission des données** :
   - Le module LoRa envoie les données du capteur vers la passerelle LoRa.
-  - La passerelle transmet les données directement à la VM Node-RED.
-  - Node-RED relaie l’information à la base de données MongoDB.
+  - La passerelle transmet les données directement à la VM Angular.
+  - Le backend Angular relaie l’information à la base de données MongoDB.
+  - Le frontend Angular affiche les infos à l'utilisateur.
 - **Interface utilisateur** :
   - **Angular** : Permet aux utilisateurs de visualiser les niveaux d’eau et de gérer les actions sur l’objet IoT.
-  - **Node-RED** : Permet aux administrateurs de superviser les flux et les échanges.
 
 ### Répartition des rôles
 - **Valentin (Systèmes et Réseau)** :
-  - Mise en place et sécurisation des trois VMs (MongoDB, Node-RED et Angular).
+  - Mise en place et sécurisation des trois VMs (MongoDB, et Angular).
   - Configuration de la base MongoDB.
   - Supervision de la connectivité LoRa et de l’intégration réseau.
 - **Quentin (Développement Logiciel)** :
@@ -77,4 +73,3 @@ Le système repose sur les composants suivants :
 - Commande automatique de la pompe.
 - Transmission LoRa stable sur la distance prévue.
 - Interface utilisateur fonctionnelle et intuitive.
-- Supervision efficace via Node-RED.
