@@ -27,6 +27,8 @@ Le système repose sur les technologies suivantes :
 - **ESP32 avec module WiFi et extension LoRa** : Gestion locale des capteurs et de l'automatisation.
 - **Capteur ultrason** : Mesure précise du niveau d'eau dans le réservoir.
 - **Contacteur** : Contrôle de l'alimentation de la pompe d'arrosage.
+- **Angular** : Frontend de l'application web
+- **Node.JS** : Backend de l'application web
 - **MongoDB** : Base de données pour stocker les historiques d'utilisation.
 - **MQTT (Mosquitto)** : Protocole de messagerie pour la communication entre les modules IoT et les serveurs.
 
