@@ -3,7 +3,7 @@ layout: page
 title: IoT
 slug: IoT
 menu: true
-order: 3
+order: 2
 description: >
   
 accent_color: '#457B9D'
