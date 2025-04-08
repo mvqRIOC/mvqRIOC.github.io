@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Code
-slug: Code
+title: IoT
+slug: IoT
 menu: true
 order: 3
 description: >
