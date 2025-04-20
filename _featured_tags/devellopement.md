@@ -1,177 +1,175 @@
 ---
 layout: page
-title: Dévellopement
-slug: Dévellopement
+title: Développement
+slug: developpement
 menu: true
 order: 4
 accent_color: '#457B9D'
-accent_image:       /assets/img/cdc.webp
+accent_image: /assets/img/cdc.webp
 ---
 
+# <i class="fas fa-code text-accent"></i> Développement
+
 ## Objectif Général
-Le projet **Ecodrop** tourne aussi autour d'une application web complète de supervision d'équipements IoT, en particulier connectés à **The Things Network (TTN)**, avec gestion de données en temps réel, historique, intégration MQTT, et une interface utilisateur dynamique.
+
+Le projet **Ecodrop** comprend une application web complète de supervision d’équipements **IoT**, connectés à **The Things Network (TTN)**. Elle permet une **gestion en temps réel**, un **historique des données**, une **intégration MQTT**, et une **interface responsive et dynamique**.
 
 
 ## Technologies Utilisées
 
-### Backend
-<div style="text-align: center; margin: 20px 0;"> <img src="/assets/img/docs/express.png" alt="Node.js + Express" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #ccc;" /></div> 
-- **Node.js / Express** : serveur d'API REST rapide et léger.
-- **MongoDB** : base NoSQL idéale pour des données IoT variées et dynamiques.
-- **Mongoose** : ODM facilitant l'accès aux collections MongoDB.
-- **MQTT.js** : pour l’abonnement aux topics TTN via MQTT.
-- **JWT** : pour sécuriser les routes avec un système d’authentification moderne.
-- **Autres dépendances** : `dotenv`, `bcrypt`, `jsonwebtoken`, `nodemailer`.
+### <i class="fas fa-server text-indigo-500"></i> Backend
 
-### Frontend
-<div style="text-align: center; margin: 20px 0;"> <img src="/assets/img/docs/angular.png" alt="Angular" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #ccc;" /></div> 
-- **Angular 17+** : framework complet pour construire l’interface SPA (Single Page Application).
-- **SCSS / Tailwind CSS** : styles modulaires et modernes.
-- **HttpClient, Guards, Routing** : architecture Angular bien structurée.
-- **Services Angular** : communication API et logique métier isolée.
+<div class="text-center my-6">
+  <img src="/assets/img/docs/express.png" alt="Node.js + Express" class="rounded-xl shadow-md border border-gray-300 w-72 mx-auto">
+</div>
+
+- <i class="fab fa-node-js text-green-600"></i> **Node.js / Express** : serveur d’API REST rapide.
+- <i class="fas fa-database text-blue-600"></i> **MongoDB** : base NoSQL idéale pour des données IoT variées.
+- <i class="fas fa-cubes text-purple-600"></i> **Mongoose** : ODM facilitant la gestion MongoDB.
+- <i class="fas fa-broadcast-tower text-orange-600"></i> **MQTT.js** : abonnement aux topics TTN.
+- <i class="fas fa-key text-yellow-600"></i> **JWT** : sécurisation moderne des routes.
+- **Dépendances** : `dotenv`, `bcrypt`, `jsonwebtoken`, `nodemailer`
+
+### <i class="fas fa-desktop text-pink-500"></i> Frontend
+
+<div class="text-center my-6">
+  <img src="/assets/img/docs/angular.png" alt="Angular" class="rounded-xl shadow-md border border-gray-300 w-72 mx-auto">
+</div>
+
+- <i class="fab fa-angular text-red-600"></i> **Angular 17+** : framework SPA robuste.
+- <i class="fas fa-paint-brush text-teal-500"></i> **SCSS / Tailwind CSS** : design rapide et responsive.
+- <i class="fas fa-route text-indigo-500"></i> **Routing, Guards, Services** : architecture Angular bien structurée.
+- <i class="fas fa-plug text-blue-400"></i> **Services Angular** : communication API centralisée.
 
 
 ## Cas d’Usage
 
-- Connexion / inscription des utilisateurs.
-<div style="text-align: center; margin: 20px 0;"> <img src="/assets/img/docs/login.png" alt="Angular" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #ccc;" /></div> 
+- <i class="fas fa-user-plus text-blue-500"></i> Connexion / inscription des utilisateurs  
+  <div class="text-center my-4">
+    <img src="/assets/img/docs/login.png" alt="Login" class="rounded-xl shadow-md border border-gray-300 w-72 mx-auto">
+  </div>
 
-- Affichage **temps réel** des données des capteurs TTN.
+- <i class="fas fa-wave-square text-green-500"></i> Visualisation **temps réel** des capteurs TTN  
+  <div class="text-center my-4">
+    <img src="/assets/img/docs/meteo.png" alt="Données capteur" class="rounded-xl shadow-md border border-gray-300 w-72 mx-auto">
+  </div>
 
-<div style="text-align: center; margin: 20px 0;"> <img src="/assets/img/docs/meteo.png" alt="Information Capteur" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #ccc;" /></div> 
+- <i class="fas fa-chart-bar text-purple-500"></i> Interface **Dashboard**  
+  <div class="text-center my-4">
+    <img src="/assets/img/docs/dashboard.png" alt="Dashboard" class="rounded-xl shadow-md border border-gray-300 w-72 mx-auto">
+  </div>
 
-- Vue **Dashboard** de supervision.
+- <i class="fas fa-history text-gray-500"></i> Consultation de l’**historique des messages**  
+  <div class="text-center my-4">
+    <img src="/assets/img/docs/dashboard_msg.png" alt="Messages" class="rounded-xl shadow-md border border-gray-300 w-72 mx-auto">
+  </div>
 
-<div style="text-align: center; margin: 20px 0;"> <img src="/assets/img/docs/dashboard.png" alt="Dashboard" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #ccc;" /></div> 
+- <i class="fas fa-cogs text-cyan-600"></i> Paramétrage utilisateur (thème, TTN, langue)  
+  <div class="text-center my-4">
+    <img src="/assets/img/docs/preference_utilisateur.png" alt="Préférences" class="rounded-xl shadow-md border border-gray-300 w-72 mx-auto">
+  </div>
 
-- Accès à l’**historique** des messages.
+- <i class="fas fa-envelope text-pink-600"></i> Envoi de message via la page **Support**  
+  <div class="text-center my-4">
+    <img src="/assets/img/docs/Support.png" alt="Support" class="rounded-xl shadow-md border border-gray-300 w-72 mx-auto">
+  </div>
 
-<div style="text-align: center; margin: 20px 0;"> <img src="/assets/img/docs/dashboard_msg.png" alt="Dashboard message" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #ccc;" /></div> 
-
-- Paramétrage utilisateur (thème, langue, préférences TTN).
-
-<div style="text-align: center; margin: 20px 0;"> <img src="/assets/img/docs/preference_utilisateur.png" alt="Préference Utilisateur" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #ccc;" /></div> 
-
-- Envoi de message via la page **Support**.
-
-<div style="text-align: center; margin: 20px 0;"> <img src="/assets/img/docs/Support.png" alt="Support" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #ccc;" /></div> 
-
-- Ajout dynamique d’applications TTN (`appId` + `apiKey`).
-
-<div style="text-align: center; margin: 20px 0;"> <img src="/assets/img/docs/ajout_dynamique.png" alt="Ajout Dynamique" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #ccc;" /></div> 
+- <i class="fas fa-plug text-yellow-500"></i> Ajout dynamique d'applications TTN (`appId` + `apiKey`)  
+  <div class="text-center my-4">
+    <img src="/assets/img/docs/ajout_dynamique.png" alt="Ajout TTN" class="rounded-xl shadow-md border border-gray-300 w-72 mx-auto">
+  </div>
 
 
 ## Interactions
 
-L'objectif est que l'utilisateur ajoute les objets connectés qu'il souhaite et qu'il puisse interagir avec. Le but ici est d'ajouter le recuperateur d'eau connecté mais cela peut aller plus loin avec cette application. On peut donc avoir differente façon de gerer tout cela selon le besoin.  
+L’utilisateur peut ajouter ses objets connectés TTN (comme le récupérateur d’eau connecté), interagir avec eux, et les visualiser dans l’interface.
 
-- L’utilisateur configure ses préférences → stockées en base MongoDB.
-- Le backend établit une connexion MQTT en fonction de ses ajouts TTN.
-- Les messages reçus sont enregistrés en base (`Message.js`).
-- Le frontend récupère dynamiquement les messages et les affiche **en direct**.
-- L’utilisateur interagit avec ses appareils connectés TTN.
+- <i class="fas fa-sliders-h text-indigo-600"></i> Stockage des préférences utilisateur dans MongoDB.
+- <i class="fas fa-plug text-orange-500"></i> Connexion MQTT établie selon les apps TTN ajoutées.
+- <i class="fas fa-database text-green-600"></i> Stockage des messages reçus.
+- <i class="fas fa-sync-alt text-blue-500"></i> Affichage temps réel des messages.
+- <i class="fas fa-tools text-purple-600"></i> Interaction avec les capteurs connectés TTN.
 
 
-## 🗂️ Arborescence Backend (src)
+## Arborescence Backend
 
-```
-- .
-- config
-  - db.js
-  - ttn.js
-- controllers
-  - connectedDevicesController.js
-  - dataController.js
-  - weatherController.js
-- middleware
-  - authMiddleware.js
-- models
-  - Data.js
-  - Devices.js
-  - Message.js
-  - User.js
-  - UserSettings.js
-- routes
-  - api.js
-  - authRoutes.js
-  - connectedDevicesRoutes.js
-  - dashboardRoutes.js
-  - dataRoutes.js
-  - messages.js
-  - mqttRoutes.js
-  - settingsRoutes.js
-  - supportRoutes.js
-  - ttnRoutes.js
-  - weatherRoutes.js
-- services
-  - emailService.js
-  - mqttService.js
-  - ttnService.js
+```bash
+.
+├── config/
+│   ├── db.js
+│   └── ttn.js
+├── controllers/
+│   ├── connectedDevicesController.js
+│   ├── dataController.js
+│   └── ...
+├── middleware/
+│   └── authMiddleware.js
+├── models/
+│   ├── User.js
+│   ├── Message.js
+│   └── ...
+├── routes/
+│   ├── authRoutes.js
+│   ├── mqttRoutes.js
+│   ├── ttnRoutes.js
+│   └── ...
+├── services/
+│   ├── mqttService.js
+│   └── emailService.js
 ```
 
----
 
-## 🗂️ Arborescence Frontend (src)
+## Arborescence Frontend
 
-```
-- .
-  - index.html
-  - main.ts
-  - server.ts
-  - styles.scss
-- app
-  - app.component.*
-  - app.module.ts / app.routes.ts
-  - core
-    - config
-    - models
-    - services
-  - guards
-  - home
-  - pages
-    - dashboard
-    - history
-    - login
-    - register
-    - settings
-    - support
-    - ttn-integration
-      - device-details
-  - services
-  - shared
-    - footer
-    - navbar
+```bash
+.
+├── index.html
+├── main.ts
+├── styles.scss
+├── app/
+│   ├── core/
+│   │   ├── config/
+│   │   ├── services/
+│   ├── features/
+│   │   ├── annonces/
+│   │   ├── dashboard/
+│   │   └── ttn-integration/
+│   ├── pages/
+│   │   ├── login/
+│   │   ├── register/
+│   │   ├── settings/
+│   │   └── support/
+│   └── shared/
+│       ├── navbar/
+│       └── footer/
 ```
 
 
 ## Points Forts
 
-- Connexion dynamique **MQTT** multi-applications.
-- Authentification **JWT** sécurisée.
-- Backend structuré par **services, routes, middlewares**.
-- Frontend Angular modulaire (`core`, `shared`, `features`).
-- Interface responsive avec **SCSS + Tailwind CSS**.
-- Persistance des données/messages et préférences utilisateurs.
+- <i class="fas fa-network-wired text-green-500"></i> Connexion **MQTT** multi-apps dynamique
+- <i class="fas fa-lock text-yellow-600"></i> Authentification **JWT**
+- <i class="fas fa-layer-group text-indigo-500"></i> Backend structuré par services / middlewares
+- <i class="fas fa-cubes text-pink-500"></i> Frontend modulaire Angular
+- <i class="fas fa-mobile-alt text-blue-500"></i> Interface responsive (Tailwind + SCSS)
+- <i class="fas fa-save text-gray-700"></i> Persistance des messages et préférences
 
 
-## Axe d'amélioration
+## Axes d'Amélioration
 
-- Connexion avec une plateforme adapté exemple keycloak
-- Sécurisation des flux MQTT
-- Backend en java (plus sécurisé)
-
-
-## 💡 Pourquoi ces Choix Techniques ?
-
-|   Technologie       |   Justification principale                                                  |
-|---------------------|-----------------------------------------------------------------------------|
-| Node.js + Express   | Léger, performant, adapté aux API REST temps réel, facile à prototyper     |
-| MongoDB             | Flexible, bien adapté aux données hétérogènes de type IoT                  |
-| MQTT.js             | Client parfait pour le protocole MQTT (TTN)                                |
-| Angular             | SPA robuste, scalable, bien outillée                                       |
-| SCSS / Tailwind     | Styles organisés, responsive, avec rapidité de développement               |
-| JWT                 | Authentification moderne, facile à intégrer                                |
-| Mongoose            | Simplifie la gestion de MongoDB et la validation des schémas               |
+- <i class="fas fa-user-shield text-red-600"></i> Intégration **SSO** (ex: Keycloak)
+- <i class="fas fa-shield-alt text-blue-600"></i> Sécurisation du protocole **MQTT**
+- <i class="fab fa-java text-orange-600"></i> Migration possible vers backend **Java / Spring Boot**
 
 
+## Pourquoi ces Choix Techniques ?
 
+| <i class="fas fa-toolbox"></i> Technologie | Justification principale |
+|--------------------------------------------|---------------------------|
+| Node.js + Express   | Léger, rapide, parfait pour API temps réel |
+| MongoDB             | Flexible et adapté aux données hétérogènes |
+| MQTT.js             | Compatible TTN, stable pour les IoT         |
+| Angular             | Robuste, structuré, scalable               |
+| Tailwind + SCSS     | Rapidité de prototypage, responsive        |
+| JWT                 | Authentification moderne                   |
+| Mongoose            | Validation simplifiée, efficace            |

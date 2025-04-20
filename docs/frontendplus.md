@@ -23,7 +23,7 @@ sitemap: false
 
 ---
 
-## <i class="fas fa-angle-right"></i> 🧩 Composants HTML & Logique Fonctionnelle
+## <i class="fas fa-angle-right"></i> Composants HTML & Logique Fonctionnelle
 
 ### <i class="fas fa-caret-right"></i> <i class="fas fa-angle-right"></i> 🔹 `home.component.html`
 - Contenu épuré, responsive par nature.

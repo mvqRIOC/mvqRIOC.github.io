@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <i class="fa-brands fa-angular"></i> Schéma logique – Application **EcoDrop**
+title: <i class="fa-brands fa-angular"></i> Schéma logique – Application EcoDrop
 description: >
   Vous verez ici la documentation de la partie sur Angular  
 hide_description: true

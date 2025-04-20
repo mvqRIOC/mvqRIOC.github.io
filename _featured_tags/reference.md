@@ -11,4 +11,8 @@ accent_image:         /assets/img/presentation.webp
 
 ---
 
-Consultez [la section documenter d'angular](../../docs/frontend) pour voir une decription rapide.
+
+# Section dévellopement : 
+
+- Consultez [la section documenter d'angular](../../docs/frontend) pour voir une decription rapide.
+- Consultez [la section documenter du code](../../docs/frontendplus) pour voir une decription rapide.
