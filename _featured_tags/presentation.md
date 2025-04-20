@@ -69,7 +69,7 @@ Le projet est mené par une équipe complémentaire :
 <!-- ALL MODALS -->
 <!--Mathieu-->
 <div id="modal-mathieu" class="modal">
-  <div class="modal-content" style="background: #555555">
+  <div class="modal-content" style="background:rgb(85, 85, 85)">
     <span class="close" onclick="closeModal('modal-mathieu')">&times;</span>
     <img src="/assets/img/profil/mathieu_helwig.jpg" alt="Mathieux Helwig" class="profil-img">
     <h2>Mathieu Helwig 

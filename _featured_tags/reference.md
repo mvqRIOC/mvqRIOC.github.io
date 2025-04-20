@@ -11,3 +11,4 @@ accent_image:         /assets/img/presentation.webp
 
 ---
 
+Consultez [la section documenter d'angular](../../docs/frontend) pour voir une decription rapide.
